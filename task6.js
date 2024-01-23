@@ -12,7 +12,6 @@ Output:
      {name: 'test', price: 900},
      {name: 'test1', price: 300}
   ]
-
 */
 
 const groupObject = (arrayObjects) => {

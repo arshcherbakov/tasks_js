@@ -20,5 +20,4 @@ const arrayInObject = (array) => {
 }
 
 console.log(arrayInObject([['cat', 5], ['dog', 6], ['cat', 11]]));
-
 console.log(arrayInObject([['name', 'test'], ['age', 12], ['country', 'RF']]));

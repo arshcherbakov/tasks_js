@@ -5,7 +5,6 @@ Input:
 [{name: 'width', value: 300}, {name: 'height', value: 100}];
 Output:
 {width:300, height: 100}
-
 */
 
 const arrayInObject = (array) => {

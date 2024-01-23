@@ -10,7 +10,6 @@ Input:
 '--|_|-|___|--'
 Output:
 '110100011'
-
 */
 
 const binarySequenceNumbers = (str) => {

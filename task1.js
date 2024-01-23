@@ -23,7 +23,6 @@ const sortElements = (arr, direction) => {
   return direction === 'asc' ? arr.sort((a, b) => a - b) : arr.sort((a, b) => b - a);
 }
 
-
 const elements = [6, 43, -6, 3, 0, 5, 2, 7];
 const sortedArray = sortElements(elements, 'asc');
 console.log(sortedArray);

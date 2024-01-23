@@ -8,7 +8,6 @@ Input:
 'text'
 Output:
 'tttt'
-
 */
 
 const inputCharString = (str) => {

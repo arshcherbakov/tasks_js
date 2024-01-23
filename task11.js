@@ -9,7 +9,6 @@ Input:
 'abcbacabcqbcabcbnaba'
 Output:
 false
-
 */
 
 // Solution 1 

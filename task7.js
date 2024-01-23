@@ -15,7 +15,6 @@ Output:
      {name: '', age: 12, country: ''},
      {name: '', age: null, country: 'RF'}
   ]
-
 */
 
 const filterPropertyObj = (arrayObjects) => {

@@ -8,7 +8,6 @@ Input:
 'testabctext'
 Output:
 'testabctextzzz'
-
 */
 // Solution 1
 const changeStr = (str) => {
