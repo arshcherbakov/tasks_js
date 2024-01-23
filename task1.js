@@ -18,7 +18,6 @@ console.log(sortedArray);
 // Выводит [-6, 0, 2, 3, 5, 6, 7, 43]
 */
 
-
 const sortElements = (arr, direction) => {
   return direction === 'asc' ? arr.sort((a, b) => a - b) : arr.sort((a, b) => b - a);
 }
