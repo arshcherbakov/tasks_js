@@ -11,14 +11,17 @@ Output:
 { 'name': 'test', 'age': 12, 'country': 'RF' }
 */
 
-const arrayInObject = (array) => {
+const convertArrayInObject = (array) => {
+  
   let resultObj = {};
+
   for (let obj of array) {
     !resultObj[obj[0]] ? resultObj[obj[0]] = obj[1] : resultObj[obj[0]] = obj[1];
   }
+
   return resultObj;
 }
 
-console.log(arrayInObject([['cat', 5], ['dog', 6], ['cat', 11]]));
+console.log(convertArrayInObject([['cat', 5], ['dog', 6], ['cat', 11]]));
 
-console.log(arrayInObject([['name', 'test'], ['age', 12], ['country', 'RF']]));
+console.log(convertArrayInObject([['name', 'test'], ['age', 12], ['country', 'RF']]));
