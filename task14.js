@@ -12,11 +12,14 @@ Output:
 */
 
 const urlParser = (url) => {
+
   const urlObj = new URL(url);
   let obj ={};
+
   for(let [name, value] of urlObj.searchParams) {
     obj[name] = value;
   }
+  
   return obj;
 }
 
