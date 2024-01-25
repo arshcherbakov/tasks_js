@@ -16,8 +16,10 @@ Output:
 */
 
 const groupObject = (arrayObjects) => {
+  
   const groupArray = [];
   let flag = false;
+
   for (let obj of arrayObjects) {
     for (let groupObj of groupArray) {
       if (groupObj.name === obj.name) {
@@ -31,6 +33,7 @@ const groupObject = (arrayObjects) => {
       flag = false;
     }
   }
+
   return groupArray;
 }
 
