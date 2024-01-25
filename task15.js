@@ -18,11 +18,14 @@ Output:
 */
 
 const fillingArray = (lengthArray) => {
+
   const array = [];
   let char = '';
+
   for (let i = 0; i < lengthArray; i++) {
     array.push(char += 'x');
   }
+  
   return array;
 }
 
