@@ -8,7 +8,7 @@ Output:
 
 */
 
-const arrayInObject = (array) => {
+const convertArrayInObject = (array) => {
   let resultObj = {};
   for (let obj of array) {
     if (!resultObj[obj.name]) {
@@ -18,5 +18,5 @@ const arrayInObject = (array) => {
   return resultObj;
 }
 
-console.log(arrayInObject([{ name: 'width', value: 300 }, { name: 'height', value: 100 }]));
-console.log(arrayInObject([{ name: 'width', value: 300 }, { name: 'height', value: 100 }, { name: 'height', value: 900 }, { name: 'long', value: 4698 }]));
+console.log(convertArrayInObject([{ name: 'width', value: 300 }, { name: 'height', value: 100 }]));
+console.log(convertArrayInObject([{ name: 'width', value: 300 }, { name: 'height', value: 100 }, { name: 'height', value: 900 }, { name: 'long', value: 4698 }]));
