@@ -1,6 +1,5 @@
 /*
 4. Возвращает рандомный элемент массива. Рандомный - случайный элемент массива
-4. Возвращает рандомный элемент массива. Рандомный - случайный элемент массива
 Input:
 [4, 8, 2, 9, 4, 6, 5, 1, 7, 4]
 Output:
@@ -12,7 +11,11 @@ Output:
 */
 
 const randomNumberArray = (array) => {
-  return array[Math.floor(Math.random() * (array.length - 0) + 0)];
+
+  const range = (array.length - 0) + 0;
+  const randomIndex = Math.floor(Math.random() * range);
+  
+  return array[randomIndex];
 }
 
 console.log(randomNumberArray([4, 8, 2, 9, 4, 6, 5, 1, 7, 4]));
