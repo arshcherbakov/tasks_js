@@ -1,32 +1,40 @@
-/* 
-15. Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так далее. 
-Функция параметром принимает длину массива.
+/*
+7. Отфильтровать коллекцию, где у свойства есть хоть какое-то значение
 Input:
-7
-
+  [
+     {name: 'test', age: 34, country: 'RF'},
+     {name: '', age: null, country: ''},
+     {name: 'test1', age: null, country: ''},
+     {name: '', age: 12, country: ''},
+     {name: '', age: null, country: 'RF'}
+  ]
 Output:
-[
-  x,
-  xx,
-  xxx,
-  xxxx,
-  xxxxx,
-  xxxxxx,
-  xxxxxxx
-]
+  [
+     {name: 'test', age: 34, country: 'RF'},
+     {name: 'test1', age: null, country: ''},
+     {name: '', age: 12, country: ''},
+     {name: '', age: null, country: 'RF'}
+  ]
 
 */
 
-const fillingArray = (lengthArray) => {
-
-  const array = [];
-  let char = '';
-
-  for (let i = 0; i < lengthArray; i++) {
-    array.push(char += 'x');
-  }
+const filterPropertyObj = (arrayObjects) => {
   
-  return array;
+  const filterArray = [];
+
+  for (let obj of arrayObjects) {
+    if (!obj.name || !obj.age || !obj.country) {
+      filterArray.push(obj);
+    }
+  }
+
+  return filterArray;
 }
 
-console.log(fillingArray(7));
+console.log(filterPropertyObj([
+  { name: 'test', age: 34, country: 'RF' },
+  { name: '', age: null, country: '' },
+  { name: 'test1', age: null, country: '' },
+  { name: '', age: 12, country: '' },
+  { name: '', age: null, country: 'RF' }
+]));
