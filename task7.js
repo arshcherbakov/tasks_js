@@ -19,7 +19,6 @@ Output:
 */
 
 const filterPropertyObj = (arrayObjects) => {
-  
   const filterArray = [];
 
   for (let obj of arrayObjects) {
