@@ -12,7 +12,6 @@ Output:
 */
 
 const convertArrayInObject = (array) => {
-  
   let resultObj = {};
 
   for (let obj of array) {
