@@ -20,11 +20,13 @@ Output:
 
 const filterPropertyObj = (arrayObjects) => {
   const filterArray = [];
+
   for (let obj of arrayObjects) {
-    if (Boolean(obj.name) || Boolean(obj.age) || Boolean(obj.country)) {
+    if (!obj.name || !obj.age || !obj.country) {
       filterArray.push(obj);
     }
   }
+
   return filterArray;
 }
 

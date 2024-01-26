@@ -6,15 +6,17 @@ Output:
 [2, 9, 5]
 */
 
-const repitValueArray = (arrayA, arrayB) => {
-  const repitValArr = [];
+const repeatValueArray = (arrayA, arrayB) => {
+  const repeatValArr = [];
+  
   for (let element of arrayA) {
     if (arrayB.includes(element)) {
-      repitValArr.push(element);
+      repeatValArr.push(element);
     }
   }
-  return Array.from(new Set(repitValArr));
+  
+  return Array.from(new Set(repeatValArr));
 }
 
-console.log(repitValueArray([5, 2, 7, 3, 6, 8, 2, 9, 1], [4, 2, 9, 4, 5, 4]));
-console.log(repitValueArray([4, 2, 9, 4, 5, 4], [5, 2, 7, 3, 6, 8, 2, 9, 1]));
+console.log(repeatValueArray([5, 2, 7, 3, 6, 8, 2, 9, 1], [4, 2, 9, 4, 5, 4]));
+console.log(repeatValueArray([4, 2, 9, 4, 5, 4], [5, 2, 7, 3, 6, 8, 2, 9, 1]));
