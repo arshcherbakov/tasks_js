@@ -12,19 +12,18 @@ Output:
 */
 
 const outputCharString = (str) => {
-	
-	const length_str = str.length;
-	let new_str = '';
+  const length_str = str.length;
+  let new_str = '';
+  
+  if (length_str > 5) {
+    return str.slice(0, 3) + str.slice(-3);
+  }
 
-	if (length_str > 5) {
-		return str.slice(0, 3) + str.slice(-3);
-	}
+  for (let i = 0; i < length_str; i++) {
+    new_str += str[0];
+  }
 
-	for (let i = 0; i < length_str; i++) {
-		new_str += str[0];
-	}
-
-	return new_str;
+  return new_str;
 }
 
 console.log(outputCharString('test education part 2'));
