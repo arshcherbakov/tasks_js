@@ -11,7 +11,6 @@ Output:
 */
 
 const randomNumberArray = (array) => {
-
   const range = (array.length - 0) + 0;
   const randomIndex = Math.floor(Math.random() * range);
   
