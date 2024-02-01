@@ -8,11 +8,13 @@ Output:
 
 const repeatValueArray = (arrayA, arrayB) => {
   const repeatValArr = [];
+  
   for (let element of arrayA) {
     if (arrayB.includes(element)) {
       repeatValArr.push(element);
     }
   }
+  
   return Array.from(new Set(repeatValArr));
 }
 
