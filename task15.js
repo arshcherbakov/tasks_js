@@ -18,7 +18,6 @@ Output:
 */
 
 const fillingArray = (lengthArray) => {
-
   const array = [];
   let char = '';
 
